@@ -8,7 +8,7 @@ const CarouselPage = () => {
   useEffect(() => {
     const fetchBanners = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/api/banners");
+        const response = await axios.get("https://baby-island.onrender.com/api/banners");
         setBanners(response.data.data);
       } catch (error) {
         console.error("Failed to fetch banners:", error);
