@@ -27,7 +27,7 @@ const ImageUpload = () => {
     formData.append("photo", selectedFile); // Ensure this matches "photo" in the backend
   
     try {
-      const response = await axios.post("http://localhost:8080/api/save", formData, {
+      const response = await axios.post("https://baby-island.onrender.com/api/save", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
   
@@ -40,7 +40,7 @@ const ImageUpload = () => {
 
   // Fetch Uploaded Images from Backend
   useEffect(() => {
-    axios.get("http://localhost:8080/api/get")
+    axios.get("https://baby-island.onrender.com/api/get")
       .then((res) => setUploadedImages(res.data))
       .catch((err) => console.error("Fetch Error:", err));
   }, []);
