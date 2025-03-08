@@ -16,7 +16,7 @@ import { FaCartShopping } from "react-icons/fa6";
 import CartMobileLink from './components/CartMobile';
 import Banner from './components/Banner';
 import Banners from './pages/Banners';
-import AboutSection from './pages/sample';
+// import AboutSection from './pages/sample';
 import Categories from './pages/test';
 import TextScroller from './components/OfferText';
 import SpinWheel from './pages/spinwheel';
